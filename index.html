@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portofolio Desain · Anggi Susanti</title>
+<meta name="description" content="Portofolio desain grafis Anggi Susanti, S.Kom: infografis anak, poster, banner, branding, feeds Instagram, print, dan UI/UX.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#1F4BFF;--navy:#0B1F8A;--sky:#A9BCFF;--pale:#E8EEFF;--ink:#0A1240;--white:#fff;--sun:#FFB020;
+  --bd:3px solid var(--navy);--sh:6px 6px 0 var(--navy)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.55;overflow-x:hidden}
+img{display:block;max-width:100%}
+h1,h2,h3,.fun{font-family:Fredoka,Inter,sans-serif}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* nav */
+.nav{position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:50;display:flex;gap:4px;background:#fff;border:var(--bd);border-radius:99px;padding:5px;box-shadow:4px 4px 0 var(--navy);max-width:calc(100vw - 20px);overflow-x:auto}
+.nav a{font:600 .82rem Fredoka,sans-serif;text-decoration:none;padding:6px 12px;border-radius:99px;white-space:nowrap}
+.nav a:hover{background:var(--blue);color:#fff}
+.nav-l{display:flex;gap:4px}.nav-t{display:none}
+
+/* hero */
+.hero{min-height:100svh;display:grid;align-items:center;padding:110px 0 70px;position:relative;overflow:hidden;
+  background:radial-gradient(circle at 85% 20%,var(--pale) 0 30%,transparent 31%),#fff}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.pill{display:inline-block;background:var(--blue);color:#fff;font:600 .85rem Fredoka;padding:6px 16px;border-radius:99px;border:var(--bd);transform:rotate(-3deg);box-shadow:3px 3px 0 var(--navy)}
+.hero h1{font-size:clamp(2.8rem,7.5vw,6rem);line-height:.98;margin:18px 0;color:var(--navy);letter-spacing:-.5px}
+.hero h1 em{font-style:normal;color:var(--blue);display:inline-block;transform:rotate(-2deg);background:var(--pale);padding:0 .2em;border:var(--bd);border-radius:14px;box-shadow:var(--sh)}
+.hero p.lead{max-width:34rem;font-size:1.1rem}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chips a{font:600 .9rem Fredoka;text-decoration:none;background:#fff;border:var(--bd);border-radius:99px;padding:6px 16px;box-shadow:3px 3px 0 var(--navy);transition:.2s}
+.chips a:nth-child(odd){transform:rotate(-2deg)}.chips a:nth-child(even){transform:rotate(2deg)}
+.chips a:hover{background:var(--blue);color:#fff;transform:rotate(0) translateY(-3px)}
+.tools{display:flex;gap:14px;margin-top:30px;align-items:center;flex-wrap:wrap}
+.tools img{width:74px;height:74px;object-fit:contain;background:#fff;border:var(--bd);border-radius:20px;padding:10px;box-shadow:3px 3px 0 var(--navy)}
+.tools img:nth-child(odd){transform:rotate(-5deg)}.tools img:nth-child(even){transform:rotate(4deg)}
+.portrait{position:relative;justify-self:center;width:min(500px,88vw)}
+.portrait .blob{position:absolute;inset:-6% -10% -4% -6%;background:var(--blue);border:var(--bd);border-radius:60% 40% 46% 54%/56% 44% 56% 44%;transform:rotate(8deg);animation:morph 9s ease-in-out infinite}
+.portrait img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;border:var(--bd);border-radius:40px;background:var(--sky);transform:rotate(-4deg);box-shadow:var(--sh)}
+.sticker{position:absolute;z-index:2;font:700 .9rem Fredoka;background:#fff;border:var(--bd);border-radius:14px;padding:6px 12px;box-shadow:3px 3px 0 var(--navy);animation:bob 4s ease-in-out infinite}
+.st1{top:-4%;right:-8%;transform:rotate(8deg)}.st2{bottom:6%;left:-12%;transform:rotate(-8deg);animation-delay:1.5s;background:var(--sun)}
+@keyframes bob{50%{translate:0 -8px}}
+@keyframes morph{50%{border-radius:46% 54% 60% 40%/44% 56% 44% 56%;transform:rotate(-2deg)}}
+
+/* section */
+section.sec{position:relative;padding:110px 0 100px}
+section.sec.alt{background:var(--pale);clip-path:polygon(0 3.5vw,100% 0,100% calc(100% - 3.5vw),0 100%);padding:150px 0 140px;margin:-3vw 0}
+section.sec.blue{background:var(--blue);color:#fff;clip-path:polygon(0 0,100% 3.5vw,100% 100%,0 calc(100% - 3.5vw));padding:150px 0 140px;margin:-3vw 0}
+.sec-head{display:flex;gap:18px;align-items:flex-end;flex-wrap:wrap;margin-bottom:56px}
+.num{font:700 .95rem Fredoka;background:var(--sun);color:var(--ink);border:var(--bd);border-radius:99px;padding:4px 14px;transform:rotate(-4deg);box-shadow:3px 3px 0 var(--navy)}
+.sec-head h2{font-size:clamp(2rem,5vw,3.6rem);line-height:1;color:var(--navy)}
+.blue .sec-head h2{color:#fff}
+.sec-head p{flex-basis:100%;max-width:38rem}
+
+/* stage: kolase miring */
+.stage{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:34px 30px;position:relative}
+.tilt{--r:0deg;transform:rotate(var(--r));transition:transform .35s cubic-bezier(.3,1.6,.5,1),z-index 0s;cursor:zoom-in;position:relative}
+.tilt:hover{transform:rotate(0) scale(1.05) translateY(-6px);z-index:9}
+.paper{background:#fff;border:var(--bd);box-shadow:var(--sh);border-radius:10px;overflow:hidden}
+.paper img{width:100%}
+.tape::before{content:"";position:absolute;top:-14px;left:50%;width:90px;height:26px;margin-left:-45px;background:rgba(169,188,255,.85);border:2px solid rgba(11,31,138,.25);transform:rotate(-4deg);z-index:3}
+.cap{font:600 .95rem Fredoka;text-align:center;margin-top:12px;color:var(--navy)}
+.blue .cap{color:#fff}
+.cap small{display:block;font:500 .8rem Inter;opacity:.7}
+.fig{display:block;text-decoration:none;color:inherit}
+a.tilt{text-decoration:none;color:inherit}
+.fig .cap{pointer-events:none}
+
+/* kids */
+.kids .stage{gap:50px}
+.kids .fig{width:min(300px,80vw)}
+.kids .fig:nth-child(1){--r:-5deg}.kids .fig:nth-child(2){--r:4deg;margin-top:40px}
+.kids-note{max-width:260px;font:500 1.15rem Fredoka;background:#fff;color:var(--navy);border:var(--bd);border-radius:24px;padding:18px 20px;box-shadow:var(--sh);transform:rotate(3deg)}
+.kids-note b{color:var(--blue)}
+
+/* poster */
+.poster .stage{display:grid;grid-template-columns:repeat(12,1fr);gap:40px 56px;align-items:start}
+.poster .fig{width:auto}
+.poster .fig:nth-child(1){grid-column:1/6;--r:-3deg}
+.poster .fig:nth-child(2){grid-column:6/10;--r:3deg;margin-top:60px}
+.poster .fig:nth-child(3){grid-column:10/13;--r:-2deg;margin-top:20px}
+.poster .fig:nth-child(4){grid-column:4/10;--r:2deg}
+
+/* banner */
+.banner-stage{display:grid;grid-template-columns:repeat(12,1fr);gap:34px 24px}
+.banner-stage .fig:nth-child(1){grid-column:1/8;--r:-2deg}
+.banner-stage .fig:nth-child(2){grid-column:8/13;--r:2.5deg;margin-top:40px}
+.banner-stage .fig:nth-child(3){grid-column:2/8;--r:2deg}
+.banner-stage .fig:nth-child(4){grid-column:8/12;--r:-3deg;margin-top:30px}
+
+/* mountainesia */
+.mt-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:34px 24px;align-items:center}
+.mt-grid .a{grid-column:1/8;--r:-2deg}
+.mt-grid .b{grid-column:8/13;--r:3deg}
+.mt-grid .c{grid-column:1/5;--r:2deg}
+.mt-grid .d{grid-column:5/9;--r:-2deg}
+.mt-grid .e{grid-column:9/13;--r:3deg}
+.mt-grid .f{grid-column:2/7}
+.mt-grid .g{grid-column:7/12;--r:-2deg}
+.brief{background:#fff;color:var(--ink);border:var(--bd);border-radius:22px;box-shadow:var(--sh);padding:22px 24px}
+.brief h3{font-size:1.5rem;color:var(--navy);margin-bottom:6px}
+.brief p{font-size:.97rem}
+.brief .logo-box{background:var(--pale);border:var(--bd);border-radius:16px;padding:18px;display:grid;place-items:center;margin-bottom:14px}
+.brief .logo-box img{max-height:120px;width:auto;max-width:100%;object-fit:contain}
+.sw{display:flex;gap:6px;margin-top:12px}.sw i{width:26px;height:26px;border-radius:50%;border:2px solid var(--navy)}
+
+.janti{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:40px 36px}
+.janti .jb{width:340px;--r:-2deg;transform:rotate(var(--r))}
+.janti .fig:nth-of-type(1){--r:-3deg;width:230px}.janti .fig:nth-of-type(3){--r:2deg;width:230px}.janti .fig:nth-of-type(2){--r:-1deg;width:min(820px,100%);order:5;margin-top:10px}
+/* logo */
+.logo-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:34px 28px}
+.logo-grid{max-width:920px;margin:0 auto}
+.logo-grid .brief{width:calc(50% - 14px)}
+.logo-grid .brief:nth-child(1){--r:-2deg}.logo-grid .brief:nth-child(2){--r:2deg;margin-top:30px}.logo-grid .brief:nth-child(3){--r:-1.5deg;margin-top:0}.logo-grid .brief:nth-child(4){--r:1.5deg}
+.logo-grid .brief{transform:rotate(var(--r));transition:.3s}
+.logo-grid .brief:hover{transform:rotate(0) translateY(-6px)}
+.logo-grid .logo-box{height:190px;cursor:zoom-in}
+.logo-grid .logo-box img{max-height:150px}
+
+/* feeds */
+.phones{display:flex;justify-content:center;padding:20px 0 10px}
+.phones .tilt{width:min(21%,230px);margin:0 -1.6%}
+.phones .tilt:nth-child(1){--r:-9deg;margin-top:40px}.phones .tilt:nth-child(2){--r:-4deg;margin-top:10px}
+.phones .tilt:nth-child(3){--r:0deg;margin-top:-18px;z-index:2}.phones .tilt:nth-child(4){--r:4deg;margin-top:10px}.phones .tilt:nth-child(5){--r:9deg;margin-top:40px}
+.phones img{filter:drop-shadow(8px 12px 14px rgba(11,31,138,.28))}
+.feeds-names{display:flex;justify-content:center;gap:10px 18px;flex-wrap:wrap;margin-top:34px}
+.feeds-names span{font:600 .9rem Fredoka;background:#fff;border:var(--bd);border-radius:99px;padding:4px 14px;box-shadow:3px 3px 0 var(--navy)}
+
+/* print */
+.print-row{display:grid;grid-template-columns:1fr;gap:70px}
+.brosur{max-width:880px;margin:0 auto;--r:-1.5deg}
+.mag{display:flex;justify-content:center;flex-wrap:wrap;gap:30px 0;padding:10px 0}
+.mag .tilt{width:min(30%,330px);margin:0 -1%}
+.mag .tilt:nth-child(1){--r:-8deg;margin-top:30px}.mag .tilt:nth-child(2){--r:-3deg}.mag .tilt:nth-child(3){--r:3deg;margin-top:26px}
+.mag .tilt:nth-child(4){--r:-5deg;margin-top:-10px}.mag .tilt:nth-child(5){--r:2deg;margin-top:26px}.mag .tilt:nth-child(6){--r:7deg}
+.mag .paper{border-radius:6px}
+.btn{display:inline-block;font:600 1rem Fredoka;text-decoration:none;background:var(--blue);color:#fff;border:var(--bd);border-radius:99px;padding:8px 22px;box-shadow:4px 4px 0 var(--navy);transition:.2s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy)}
+.center{text-align:center;margin-top:34px}
+
+/* mockup */
+.phone{position:relative;background:#0e0f14;border-radius:34px;padding:9px;box-shadow:0 0 0 2px #2b2d38,10px 14px 0 rgba(11,31,138,.25)}
+.phone::before{content:"";position:absolute;top:13px;left:50%;width:34%;height:15px;margin-left:-17%;background:#0e0f14;border-radius:99px;z-index:3}
+.phone .view{border-radius:26px;background:#fff}
+.browser{background:#fff;border:var(--bd);border-radius:14px;box-shadow:var(--sh);overflow:hidden}
+.browser .bar{display:flex;align-items:center;gap:6px;background:var(--pale);border-bottom:var(--bd);padding:8px 12px}
+.browser .bar i{width:10px;height:10px;border-radius:50%;background:#ff6b6b;border:1.5px solid var(--navy)}
+.browser .bar i:nth-child(2){background:var(--sun)}.browser .bar i:nth-child(3){background:#5bd58a}
+.browser .bar span{flex:1;margin-left:8px;background:#fff;border-radius:99px;height:16px;border:1.5px solid var(--navy)}
+.laptop{width:100%}
+.laptop .screen{background:#14151c;border-radius:16px 16px 0 0;padding:12px 12px 14px;box-shadow:0 0 0 2px #2b2d38}
+.laptop .base{height:16px;background:linear-gradient(#d8dcec,#a9aec6);border-radius:0 0 16px 16px;width:112%;margin-left:-6%;position:relative;box-shadow:8px 12px 0 rgba(11,31,138,.2)}
+.laptop .base::after{content:"";position:absolute;top:0;left:50%;width:16%;height:6px;margin-left:-8%;background:#8a90ab;border-radius:0 0 8px 8px}
+.view{overflow:hidden;position:relative;height:var(--h,380px)}
+.view img{width:100%;transition:transform 7s ease-in-out}
+.scroll:hover img{transform:translateY(calc(-100% + var(--h,380px)))}
+.hint{position:absolute;right:8px;bottom:8px;z-index:4;font:600 .7rem Fredoka;background:var(--blue);color:#fff;border-radius:99px;padding:2px 10px;pointer-events:none;transition:.3s}
+.scroll:hover .hint{opacity:0}
+
+.ui-block{margin-bottom:110px}
+.ui-block:last-child{margin-bottom:0}
+.ui-title{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:34px}
+.ui-title h3{font-size:1.8rem;color:var(--navy)}
+.ui-title span{font:500 .95rem Inter;opacity:.75;max-width:46rem}
+.harian{display:flex;justify-content:center;gap:0;padding:10px 0}
+.harian .tilt{width:min(17%,190px);margin:0 -1%}
+.harian .tilt:nth-child(1){--r:-8deg;margin-top:34px}.harian .tilt:nth-child(2){--r:-4deg;margin-top:12px}.harian .tilt:nth-child(3){--r:-1deg}
+.harian .tilt:nth-child(4){--r:1deg}.harian .tilt:nth-child(5){--r:4deg;margin-top:12px}.harian .tilt:nth-child(6){--r:8deg;margin-top:34px}
+.harian .phone{padding:6px;border-radius:24px}.harian .phone .view{border-radius:19px;height:auto;aspect-ratio:9/20}
+.harian .phone::before{top:9px;height:9px}
+.harian .view img{transition:none;height:100%;object-fit:cover}
+.duo{display:grid;grid-template-columns:1.6fr .6fr;gap:34px;align-items:start;max-width:960px;margin:0 auto}
+.duo .tilt:nth-child(1){--r:-1.5deg}.duo .tilt:nth-child(2){--r:3deg}
+.sit-main{max-width:820px;margin:0 auto 54px;--r:-1deg}
+.sit-row{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.sit-row .tilt:nth-child(1){--r:-3deg}.sit-row .tilt:nth-child(2){--r:2deg;margin-top:14px}.sit-row .tilt:nth-child(3){--r:-2deg}.sit-row .tilt:nth-child(4){--r:3deg;margin-top:14px}
+.sit-row .browser{box-shadow:4px 4px 0 var(--navy);border-radius:10px;border-width:2px}
+.sit-row .bar{padding:5px 8px}.sit-row .bar i{width:7px;height:7px}.sit-row .bar span{height:11px}
+.sit-row .view{height:auto}
+.sit-row .cap{font-size:.82rem}
+
+/* sertifikat */
+.certs{display:flex;flex-wrap:wrap;justify-content:center;gap:34px 26px}
+.certs .tilt{width:min(330px,86vw)}
+.certs .tilt:nth-child(odd){--r:-2.5deg}.certs .tilt:nth-child(even){--r:2.5deg;margin-top:20px}
+.certs .tilt:nth-child(3n){--r:-1deg}
+
+/* footer */
+footer{text-align:center;padding:110px 0 90px;position:relative}
+footer h2{font-size:clamp(2.4rem,7vw,5rem);color:var(--navy);line-height:1}
+footer h2 em{font-style:normal;color:#fff;background:var(--blue);border:var(--bd);border-radius:18px;padding:0 .25em;display:inline-block;transform:rotate(-3deg);box-shadow:var(--sh)}
+footer p{margin-top:20px;font-size:1.05rem}
+footer .foot-nav{margin-top:28px}
+
+
+/* scroll animation */
+#progress{position:fixed;top:0;left:0;height:5px;width:100%;background:var(--sun);transform-origin:0 50%;transform:scaleX(0);z-index:60;border-bottom:2px solid var(--navy)}
+.rv{opacity:0;translate:var(--dx,0) var(--dy,70px);scale:.88;transition:opacity .7s ease var(--d,0s),translate .9s cubic-bezier(.2,1.3,.4,1) var(--d,0s),scale .9s cubic-bezier(.2,1.3,.4,1) var(--d,0s)}
+.rv.in{opacity:1;translate:0 0;scale:1}
+.tilt.rv{transition:transform .35s cubic-bezier(.3,1.6,.5,1),opacity .7s ease var(--d,0s),translate .9s cubic-bezier(.2,1.3,.4,1) var(--d,0s),scale .9s cubic-bezier(.2,1.3,.4,1) var(--d,0s)}
+.rv.from-l{--dx:-120px;--dy:30px}.rv.from-r{--dx:120px;--dy:30px}
+.sec-head.rv{--dy:30px;--dx:-40px;scale:1}
+.num{display:inline-block}
+.sec-head.rv .num{transform:rotate(-4deg) scale(.4);transition:transform .8s cubic-bezier(.2,2,.4,1) .15s}
+.sec-head.rv.in .num{transform:rotate(-4deg) scale(1)}
+.par{will-change:translate}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1!important;translate:none!important;scale:1!important}#progress{display:none}}
+
+/* responsif tambahan */
+.nav{scrollbar-width:none}.nav::-webkit-scrollbar{display:none}
+@media (hover:none){
+  .scroll img{animation:autoscroll 16s ease-in-out infinite alternate}
+  .scroll .hint{display:none}
+}
+@keyframes autoscroll{to{transform:translateY(calc(-100% + var(--h,380px)))}}
+@media (max-width:1024px){
+  .wrap{padding:0 22px}
+  .hero{min-height:auto;padding:110px 0 70px}
+  .portrait{width:min(400px,100%)}
+  .st1{right:-3%}
+  .banner-stage,.mt-grid{gap:30px 18px}
+  .poster .stage{gap:36px 28px}
+  .logo-grid{max-width:100%}
+  .harian .tilt{width:min(18%,170px)}
+}
+@media (max-width:820px){
+  .hero{min-height:auto;padding:96px 0 50px}
+  .hero .wrap{gap:24px}
+  .portrait{width:min(340px,80vw)}
+  section.sec{padding:80px 0 70px}
+  section.sec.alt,section.sec.blue{padding:110px 0 100px}
+  .sec-head{margin-bottom:36px}
+  .ui-block{margin-bottom:70px}
+  .ui-title h3{font-size:1.5rem}
+  .duo .tilt:nth-child(2){width:62%}
+  .janti .jb,.janti .fig{width:min(360px,100%)!important}
+  .janti .fig:nth-of-type(2){width:100%!important}
+  .brosur{--r:0deg}
+  .certs .tilt{width:min(340px,100%)}
+  .nav a{padding:6px 10px;font-size:.78rem}
+}
+@media (max-width:480px){
+  .wrap{padding:0 16px}
+  .hero h1{font-size:clamp(2.6rem,13vw,3.6rem)}
+  .tools{gap:10px}.tools img{width:calc((100vw - 32px - 50px)/6);height:calc((100vw - 32px - 50px)/6);padding:6px;border-radius:14px}
+  .sec-head h2{font-size:2rem}
+  .phones .tilt{width:44%}.harian .tilt{width:42%}.mag .tilt{width:46%}
+  .sit-row{grid-template-columns:1fr 1fr;gap:16px}
+  .paper,.browser,.brief{box-shadow:4px 4px 0 var(--navy)}
+}
+
+/* cegah halaman melebar di HP */
+section,header,footer{overflow-x:clip}
+@media (max-width:820px){
+  .rv.from-l{--dx:-40px}.rv.from-r{--dx:40px}
+  .ui-title{flex-direction:column;align-items:center;gap:4px}
+  .ui-title span{margin:0}
+  .laptop .base{width:104%;margin-left:-2%}
+}
+/* nav & rata tengah untuk layar kecil */
+@media (max-width:820px){
+  .nav{width:calc(100vw - 32px);max-width:420px;border-radius:26px;flex-direction:column;overflow:visible;padding:5px;top:10px}
+  .nav-t{display:flex;align-items:center;justify-content:space-between;width:100%;background:var(--blue);color:#fff;border:0;border-radius:99px;padding:8px 18px;font:600 .95rem Fredoka,sans-serif;cursor:pointer}
+  .nav-t i{width:18px;height:12px;background:linear-gradient(#fff 0 0) 0 0/100% 2px no-repeat,linear-gradient(#fff 0 0) 0 50%/100% 2px no-repeat,linear-gradient(#fff 0 0) 0 100%/100% 2px no-repeat;transition:.25s}
+  .nav.open .nav-t i{transform:rotate(90deg)}
+  .nav-l{display:none;grid-template-columns:1fr 1fr;gap:6px;padding:8px 4px 4px}
+  .nav.open .nav-l{display:grid}
+  .nav-l a{text-align:center;background:var(--pale);border:2px solid var(--navy);padding:9px 8px;font-size:.88rem}
+  .hero .wrap{text-align:center;justify-items:center}
+  .hero h1{text-align:center}
+  .hero .wrap>div:first-child{width:100%}
+  .hero .pill{display:table;margin:0 auto}
+  .tools,.chips{justify-content:center}
+  .sec-head{justify-content:center;text-align:center}
+  .sec-head p{margin-left:auto;margin-right:auto}
+  .ui-title{justify-content:center;text-align:center}
+  .brief{text-align:center}.brief .sw{justify-content:center}
+  .banner-stage .fig,.mt-grid>*,.certs .tilt{margin-left:auto;margin-right:auto}
+}
+/* lightbox */
+#lb{position:fixed;inset:0;background:rgba(10,18,64,.88);display:none;place-items:center;z-index:100;padding:24px;cursor:zoom-out}
+#lb.on{display:grid}
+#lb img{max-width:min(96vw,1400px);max-height:92vh;border:var(--bd);border-radius:14px;background:#fff;box-shadow:0 0 0 4px #fff}
+
+@media (max-width:820px){
+  .janti .jb,.janti .fig{width:min(340px,100%)!important}
+  .hero .wrap{grid-template-columns:1fr;text-align:left}.portrait{order:-1;margin-bottom:20px}
+  .banner-stage,.mt-grid{display:flex;flex-direction:column;align-items:center}
+  .banner-stage .fig,.mt-grid>*{width:min(540px,100%)}
+  .logo-grid .brief{width:100%!important;margin-top:0!important}
+  .duo{grid-template-columns:1fr}.duo .tilt:nth-child(2){width:50%;margin:0 auto}
+  .sit-row{grid-template-columns:1fr 1fr}
+  .phones,.harian,.mag{flex-wrap:wrap;gap:20px}
+  .phones .tilt{width:40%;margin:0}.harian .tilt{width:30%;margin:0}.mag .tilt{width:44%;margin:0}
+  .phones .tilt,.harian .tilt,.mag .tilt{margin-top:0!important}
+  .poster .stage{display:flex}.poster .fig{margin-top:0!important;width:min(320px,86vw)!important}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+<nav class="nav" id="nav">
+  <button class="nav-t" type="button" aria-expanded="false" aria-controls="nav-l"><span>Menu</span><i aria-hidden="true"></i></button>
+  <div class="nav-l" id="nav-l"><a href="#poster">Poster</a><a href="#banner">Banner</a><a href="#branding">Branding</a><a href="#logo">Logo</a><a href="#feeds">Feeds</a><a href="#print">Print</a><a href="#uiux">UI/UX</a><a href="#sertifikat">Sertifikat</a></div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="pill">Portofolio Desain Grafis ✶</span>
+      <h1>Halo, aku <em>Anggi</em> Susanti!</h1>
+      <div class="tools">
+        <img src="assets/logo-skill/adobe-photoshop.png" alt="Photoshop"><img src="assets/logo-skill/adobe-illustrator.png" alt="Illustrator"><img src="assets/logo-skill/adobe-indesign.png" alt="InDesign"><img src="assets/logo-skill/adobe-lightroom.png" alt="Lightroom"><img src="assets/logo-skill/figma.png" alt="Figma"><img src="assets/logo-skill/canva.png" alt="Canva">
+      </div>
+      <div class="chips"><a href="#poster">Lihat karyaku ↓</a></div>
+    </div>
+    <div class="portrait">
+      <div class="blob"></div>
+      <img src="assets/web/profile/foto-anggi.webp?v=2" alt="Foto Anggi Susanti">
+      <span class="sticker st1">🎨 Desain Grafis</span>
+    </div>
+  </div>
+</header>
+
+<!-- 02 POSTER -->
+<section class="sec poster" id="poster">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">01</span><h2>Poster</h2></div>
+    <div class="stage">
+      <a class="tilt fig tape" data-zoom href="assets/web/poster/infografis-burung-rangkok.webp?v=2"><div class="paper"><img src="assets/web/poster/infografis-burung-rangkok.webp?v=2" alt="Infografis Burung Rangkok"></div><div class="cap">Infografis Burung Rangkok<small>Bucerotidae</small></div></a>
+      <a class="tilt fig tape" data-zoom href="assets/web/poster/seminar-hybrid-peluang-kerja-it-2023.webp"><div class="paper"><img src="assets/web/poster/seminar-hybrid-peluang-kerja-it-2023.webp" alt="Poster Seminar Hybrid"></div><div class="cap">Seminar Hybrid: Peluang Kerja IT<small>UKM Cyber · 2023</small></div></a>
+      <a class="tilt fig tape" data-zoom href="assets/web/other/poster-peran-ai-smart-city.webp"><div class="paper"><img src="assets/web/other/poster-peran-ai-smart-city.webp" alt="Poster AI Smart City"></div><div class="cap">Peran AI pada Smart City<small>Infografis poster</small></div></a>
+      <a class="tilt fig tape" data-zoom href="assets/web/poster/internship-enuma-technology.webp"><div class="paper"><img src="assets/web/poster/internship-enuma-technology.webp" alt="Poster Internship Enuma"></div><div class="cap">Internship Program<small>Enuma Technology</small></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- 03 BANNER -->
+<section class="sec alt" id="banner">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">02</span><h2>Banner</h2></div>
+    <div class="banner-stage">
+      <a class="tilt fig tape" data-zoom href="assets/web/banner/gebyar-kemerdekaan-rw11.webp"><div class="paper"><img src="assets/web/banner/gebyar-kemerdekaan-rw11.webp" alt="Banner Gebyar Kemerdekaan"></div><div class="cap">Gebyar Kemerdekaan<small>Dukuh Gondangan RW 11</small></div></a>
+      <a class="tilt fig tape" data-zoom href="assets/web/banner/tour-panti-wisma-yatim-nurul-huda-2023.webp"><div class="paper"><img src="assets/web/banner/tour-panti-wisma-yatim-nurul-huda-2023.webp" alt="Banner Tour Panti"></div><div class="cap">Tour Panti<small>Wisma Yatim Nurul Huda · 2023</small></div></a>
+      <a class="tilt fig tape" data-zoom href="assets/web/banner/workshop-arduino-iot-2023.webp"><div class="paper"><img src="assets/web/banner/workshop-arduino-iot-2023.webp" alt="Banner Workshop Arduino"></div><div class="cap">Workshop Arduino: Monitoring IoT<small>UKM Cyber · 2023</small></div></a>
+      <a class="tilt fig tape" data-zoom href="assets/web/banner/modeling-3d-animation-2023.webp"><div class="paper"><img src="assets/web/banner/modeling-3d-animation-2023.webp" alt="Banner Modeling 3D"></div><div class="cap">Modeling 3D Animation<small>Komunitas Multimedia · 2023</small></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- 04 MOUNTAINESIA (branding + logo + landing page) -->
+<section class="sec" id="branding">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">03</span><h2>Branding</h2>
+      <p>Dua proyek branding lengkap: Mountainesia dan KKN BUMDes Jaya Janti.</p></div>
+    <div class="ui-title"><h3>Mountainesia</h3><span>Logo, identitas visual, dan landing page</span></div>
+    <div class="mt-grid">
+      <a class="tilt a fig" data-zoom href="assets/web/branding/branding-mountainesia-1.webp"><div class="paper"><img src="assets/web/branding/branding-mountainesia-1.webp" alt="Branding Mountainesia 1"></div></a>
+      <div class="b brief tilt" style="cursor:default"><div class="logo-box"><img src="assets/web/logo/mountainesia.webp" alt="Logo Mountainesia"></div>
+        <h3>Logo Mountainesia</h3><p>Perusahaan yang berfokus pada jasa tour guide pendakian di berbagai lokasi di Indonesia, sekaligus menjual perlengkapan pendakian. Logonya memadukan gunung dan matahari terbit berwarna oranye sebagai simbol semangat petualangan.</p>
+        <div class="sw"><i style="background:#FF7A00"></i><i style="background:#F5A800"></i><i style="background:#3F4148"></i><i style="background:#fff"></i></div></div>
+      <a class="tilt c fig" data-zoom href="assets/web/branding/branding-mountainesia-2.webp"><div class="paper"><img src="assets/web/branding/branding-mountainesia-2.webp" alt="Branding Mountainesia 2"></div></a>
+      <a class="tilt d fig" data-zoom href="assets/web/branding/branding-mountainesia-3.webp"><div class="paper"><img src="assets/web/branding/branding-mountainesia-3.webp" alt="Branding Mountainesia 3"></div></a>
+      <a class="tilt e fig" data-zoom href="assets/web/branding/branding-mountainesia-4.webp"><div class="paper"><img src="assets/web/branding/branding-mountainesia-4.webp" alt="Branding Mountainesia 4"></div></a>
+      <a class="tilt f fig" data-zoom href="assets/web/branding/branding-mountainesia-5.webp"><div class="paper"><img src="assets/web/branding/branding-mountainesia-5.webp" alt="Branding Mountainesia 5"></div></a>
+      <div class="g tilt" style="cursor:default">
+        <div class="browser"><div class="bar"><i></i><i></i><i></i><span></span></div>
+          <div class="view scroll" style="--h:340px"><img src="assets/web/uiux/mountainesia-landing-page.webp" alt="Landing page Mountainesia"><span class="hint">arahkan kursor ↓</span></div></div>
+        <div class="cap">Landing page Mountainesia<small>Figma</small></div></div>
+    </div>
+    <div class="ui-title" style="margin-top:110px"><h3>KKN BUMDes Jaya Janti 2026</h3><span>Logo, ID card, lanyard, dan frame Instastory</span></div>
+    <div class="janti">
+      <div class="brief jb"><div class="logo-box" data-zoom-src="assets/web/logo/kkn-bumdes-jaya-janti-2026.webp"><img src="assets/web/logo/kkn-bumdes-jaya-janti-2026.webp" alt="Logo KKN BUMDes Jaya Janti"></div>
+        <h3>KKN BUMDes Jaya Janti 2026</h3><p>Emblem bulat bertema "Jaya Janti Bersinergi". Pegunungan, rumah, dan aliran air dengan ikan menggambarkan potensi alam desa. Dilengkapi ID card, lanyard, dan frame Instastory.</p>
+        <div class="sw"><i style="background:#3E9B4F"></i><i style="background:#1E8FE0"></i><i style="background:#0B1F8A"></i></div></div>
+      <a class="tilt fig tape" data-zoom href="assets/web/other/id-card-kkn-janti.webp"><div class="paper"><img src="assets/web/other/id-card-kkn-janti.webp" alt="ID card KKN"></div><div class="cap">ID Card</div></a>
+      <a class="tilt fig tape" data-zoom href="assets/web/other/lanyard-bumdes.webp"><div class="paper"><img src="assets/web/other/lanyard-bumdes.webp" alt="Lanyard BUMDes"></div><div class="cap">Lanyard</div></a>
+      <a class="tilt fig tape" data-zoom href="assets/web/other/frame-instastory-kkn-janti.webp"><div class="paper"><img src="assets/web/other/frame-instastory-kkn-janti.webp" alt="Frame Instastory"></div><div class="cap">Frame Instastory</div></a>
+    </div>
+  </div>
+</section>
+
+<!-- 05 LOGO -->
+<section class="sec alt" id="logo">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">04</span><h2>Logo</h2><p>Setiap logo dirancang dari brief singkat klien.</p></div>
+    <div class="logo-grid">
+      <div class="brief"><div class="logo-box" data-zoom-src="assets/web/logo/alfaino.webp"><img src="assets/web/logo/alfaino.webp" alt="Logo Alfaino"></div>
+        <h3>ALFAINO</h3><p>ALFAINO adalah perusahaan edukasi teknologi yang mengembangkan talenta lewat Academy, membangun solusi teknologi lewat Lab, dan menghubungkan karya inovasi dengan peluang lewat Connect.</p>
+        <div class="sw"><i style="background:#1677FF"></i><i style="background:#FF7A00"></i></div></div>
+      <div class="brief"><div class="logo-box" data-zoom-src="assets/web/logo/mersifvista.webp"><img src="assets/web/logo/mersifvista.webp" alt="Logo MersifVista"></div>
+        <h3>MersifVista</h3><p>Logo program CSR milik Mersiflab. Sosok manusia dengan panah yang menukik ke atas melambangkan pertumbuhan dan kontribusi bagi masyarakat.</p>
+        <div class="sw"><i style="background:#2FB4FF"></i></div></div>
+      <div class="brief"><div class="logo-box" data-zoom-src="assets/web/logo/harian.webp"><img src="assets/web/logo/harian.webp" alt="Logo Harian"></div>
+        <h3>Harian</h3><p>Logo aplikasi kesehatan mental dan produktivitas yang menggunakan AI. Garis yang saling terhubung membentuk huruf H dengan wajah tersenyum di tengahnya.</p><div class="sw"><i style="background:#7B3FF2"></i><i style="background:#5B1FA8"></i></div></div>
+      <div class="brief"><div class="logo-box" data-zoom-src="assets/web/logo/temani.webp"><img src="assets/web/logo/temani.webp" alt="Logo TEMANI"></div>
+        <h3>TEMANI</h3><p>Aplikasi penunjang produktivitas berbasis AI untuk mendeteksi dan mengurangi risiko stres sejak dini, dengan tagline "Pahami Diri, Jalani Hari".</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 FEEDS -->
+<section class="sec" id="feeds">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">05</span><h2>Feeds Instagram</h2><p>Desain feeds yang tersusun menjadi satu tampilan profil yang utuh dan menarik.</p></div>
+    <div class="phones">
+      <a class="tilt" data-zoom href="assets/web/feeds-crop/feeds-ppm.webp"><img src="assets/web/feeds-crop/feeds-ppm.webp" alt="Feeds PPM"></a>
+      <a class="tilt" data-zoom href="assets/web/feeds-crop/feeds-semnasa.webp"><img src="assets/web/feeds-crop/feeds-semnasa.webp" alt="Feeds Semnasa"></a>
+      <a class="tilt" data-zoom href="assets/web/feeds-crop/feeds-dies-natalis.webp"><img src="assets/web/feeds-crop/feeds-dies-natalis.webp" alt="Feeds Dies Natalis"></a>
+      <a class="tilt" data-zoom href="assets/web/feeds-crop/feeds-mersiflab.webp"><img src="assets/web/feeds-crop/feeds-mersiflab.webp" alt="Feeds Mersiflab"></a>
+      <a class="tilt" data-zoom href="assets/web/feeds-crop/feeds-kkn-janti.webp"><img src="assets/web/feeds-crop/feeds-kkn-janti.webp" alt="Feeds KKN Janti"></a>
+    </div>
+    <div class="feeds-names"><span>PPM 2023</span><span>Semnasa 2024</span><span>Dies Natalis</span><span>Mersiflab</span><span>KKN Janti 2026</span></div>
+  </div>
+</section>
+
+<!-- 07 PRINT -->
+<section class="sec alt" id="print">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">06</span><h2>Print &amp; Editorial</h2></div>
+    <div class="print-row">
+      <div>
+        <a class="tilt fig brosur tape" data-zoom href="assets/web/other/brosur-olyra.webp" style="display:block"><div class="paper"><img src="assets/web/other/brosur-olyra.webp" alt="Brosur Olyra"></div><div class="cap">Brosur Olyra<small>Brosur 3 kolom · MTE &amp; INNOPA</small></div></a>
+      </div>
+      <div>
+        <div class="ui-title" style="justify-content:center"><h3>Majalah “Digitalization Era”</h3><span>Layout editorial · InDesign</span></div>
+        <div class="mag">
+          <a class="tilt" data-zoom href="assets/web/majalah/cover.webp"><div class="paper"><img src="assets/web/majalah/cover.webp" alt="Majalah sampul"></div></a>
+          <a class="tilt" data-zoom href="assets/web/majalah/toc.webp"><div class="paper"><img src="assets/web/majalah/toc.webp" alt="Majalah daftar isi"></div></a>
+          <a class="tilt" data-zoom href="assets/web/majalah/artikel.webp"><div class="paper"><img src="assets/web/majalah/artikel.webp" alt="Majalah artikel"></div></a>
+          <a class="tilt" data-zoom href="assets/web/majalah/efek.webp"><div class="paper"><img src="assets/web/majalah/efek.webp" alt="Majalah efek teks"></div></a>
+          <a class="tilt" data-zoom href="assets/web/majalah/infografis.webp"><div class="paper"><img src="assets/web/majalah/infografis.webp" alt="Majalah infografis"></div></a>
+          <a class="tilt" data-zoom href="assets/web/majalah/review.webp"><div class="paper"><img src="assets/web/majalah/review.webp" alt="Majalah review"></div></a>
+        </div>
+        <div class="center"><a class="btn" href="assets/pdf/majalah.pdf" target="_blank" rel="noopener">Baca majalah lengkap ↗</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 UI/UX -->
+<section class="sec" id="uiux">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">07</span><h2>UI / UX</h2><p>Dirancang di Figma, ditampilkan dalam mockup perangkat. Arahkan kursor ke layar panjang untuk melihatnya bergulir.</p></div>
+
+    <div class="ui-block">
+      <div class="ui-title"><h3>Aplikasi Harian</h3><span>Aplikasi kesehatan mental dan produktivitas berbasis AI · 6 layar</span></div>
+      <div class="harian">
+        <a class="tilt" data-zoom href="assets/web/uiux/harian-home.webp"><div class="phone"><div class="view"><img src="assets/web/uiux/harian-home.webp" alt="Harian home"></div></div></a>
+        <a class="tilt" data-zoom href="assets/web/uiux/harian-pilih-mood.webp"><div class="phone"><div class="view"><img src="assets/web/uiux/harian-pilih-mood.webp" alt="Harian pilih mood"></div></div></a>
+        <a class="tilt" data-zoom href="assets/web/uiux/harian-semua-agenda.webp"><div class="phone"><div class="view"><img src="assets/web/uiux/harian-semua-agenda.webp" alt="Harian semua agenda"></div></div></a>
+        <a class="tilt" data-zoom href="assets/web/uiux/harian-detail.webp"><div class="phone"><div class="view"><img src="assets/web/uiux/harian-detail.webp" alt="Harian detail"></div></div></a>
+        <a class="tilt" data-zoom href="assets/web/uiux/harian-analytic.webp"><div class="phone"><div class="view"><img src="assets/web/uiux/harian-analytic.webp" alt="Harian analytic"></div></div></a>
+        <a class="tilt" data-zoom href="assets/web/uiux/harian-musik.webp"><div class="phone"><div class="view"><img src="assets/web/uiux/harian-musik.webp" alt="Harian musik"></div></div></a>
+      </div>
+    </div>
+
+    <div class="ui-block">
+      <div class="ui-title"><h3>Smart Ummah</h3><span>Landing page</span></div>
+      <div style="max-width:880px;margin:0 auto" class="tilt" data-nozoom>
+        <div class="browser"><div class="bar"><i></i><i></i><i></i><span></span></div>
+          <div class="view scroll" style="--h:460px"><img src="assets/web/uiux/smart-ummah-landing-page.webp" alt="Landing page Smart Ummah"><span class="hint">arahkan kursor ↓</span></div></div>
+      </div>
+    </div>
+
+    <div class="ui-block">
+      <div class="ui-title"><h3>Internasional Boost</h3><span>Landing page &amp; mobile</span></div>
+      <div class="duo">
+        <div class="tilt" data-nozoom><div class="browser"><div class="bar"><i></i><i></i><i></i><span></span></div>
+          <div class="view scroll" style="--h:430px"><img src="assets/web/uiux/internasional-boost-landing-page.webp" alt="Landing page Internasional Boost"><span class="hint">arahkan kursor ↓</span></div></div></div>
+        <div class="tilt" data-nozoom><div class="phone"><div class="view scroll" style="--h:430px"><img src="assets/web/uiux/internasional-boost-mobile.webp" alt="Mobile Internasional Boost"><span class="hint">↓</span></div></div></div>
+      </div>
+    </div>
+
+    <div class="ui-block">
+      <div class="ui-title"><h3>Situntas</h3><span>Platform pendataan dan pemantauan anak tidak sekolah untuk mendukung pemerataan pendidikan di Kabupaten Klaten</span></div>
+      <div class="sit-main tilt" data-zoom data-src="assets/web/uiux/situntas-siswa.webp"><div class="laptop"><div class="screen"><img src="assets/web/uiux/situntas-siswa.webp" alt="Situntas daftar siswa"></div><div class="base"></div></div></div>
+      <div class="sit-row">
+        <a class="tilt" data-zoom href="assets/web/uiux/situntas-tambah-siswa.webp"><div class="browser"><div class="bar"><i></i><i></i><i></i><span></span></div><div class="view"><img src="assets/web/uiux/situntas-tambah-siswa.webp" alt="Tambah siswa"></div></div><div class="cap">Tambah siswa</div></a>
+        <a class="tilt" data-zoom href="assets/web/uiux/situntas-tambah-hak-akses.webp"><div class="browser"><div class="bar"><i></i><i></i><i></i><span></span></div><div class="view"><img src="assets/web/uiux/situntas-tambah-hak-akses.webp" alt="Tambah hak akses"></div></div><div class="cap">Tambah hak akses</div></a>
+        <a class="tilt" data-zoom href="assets/web/uiux/situntas-edit-akses-menu-role.webp"><div class="browser"><div class="bar"><i></i><i></i><i></i><span></span></div><div class="view"><img src="assets/web/uiux/situntas-edit-akses-menu-role.webp" alt="Edit akses menu"></div></div><div class="cap">Edit akses menu role</div></a>
+        <a class="tilt" data-zoom href="assets/web/uiux/situntas-hapus-hak-akses.webp"><div class="browser"><div class="bar"><i></i><i></i><i></i><span></span></div><div class="view"><img src="assets/web/uiux/situntas-hapus-hak-akses.webp" alt="Hapus hak akses"></div></div><div class="cap">Hapus hak akses</div></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 SERTIFIKAT -->
+<section class="sec alt" id="sertifikat">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">08</span><h2>Desain Sertifikat</h2></div>
+    <div class="certs">
+      <a class="tilt tape" data-zoom href="assets/web/certificate/iot-cyber-amikom-2023-template.webp"><div class="paper"><img src="assets/web/certificate/iot-cyber-amikom-2023-template.webp" alt="Sertifikat IoT Cyber AMIKOM 2023"></div><div class="cap">Workshop IoT Cyber AMIKOM 2023</div></a>
+      <a class="tilt tape" data-zoom href="assets/web/certificate/semnasa-2024-sertifikat.webp"><div class="paper"><img src="assets/web/certificate/semnasa-2024-sertifikat.webp" alt="Sertifikat Semnasa 2024"></div><div class="cap">Semnasa 2024</div></a>
+      <a class="tilt tape" data-zoom href="assets/web/certificate/semnasa-2024-daftar-materi.webp"><div class="paper"><img src="assets/web/certificate/semnasa-2024-daftar-materi.webp" alt="Daftar materi Semnasa"></div><div class="cap">Semnasa 2024<small>Daftar materi</small></div></a>
+      <a class="tilt tape" data-zoom href="assets/web/certificate/ppm-2023-panitia.webp"><div class="paper"><img src="assets/web/certificate/ppm-2023-panitia.webp" alt="Sertifikat PPM 2023"></div><div class="cap">Panitia PPM 2023</div></a>
+      <a class="tilt tape" data-zoom href="assets/web/certificate/dies-natalis-18-panitia.webp"><div class="paper"><img src="assets/web/certificate/dies-natalis-18-panitia.webp" alt="Sertifikat Dies Natalis"></div><div class="cap">Panitia Dies Natalis ke-18</div></a>
+      <a class="tilt tape" data-zoom href="assets/web/certificate/pelatihan-fotografi-2022.webp"><div class="paper"><img src="assets/web/certificate/pelatihan-fotografi-2022.webp" alt="Sertifikat Fotografi"></div><div class="cap">Pelatihan Fotografi 2022</div></a>
+      <a class="tilt tape" data-zoom href="assets/web/certificate/magang-pkl-2024-sertifikat.webp" style="width:min(220px,70vw)"><div class="paper"><img src="assets/web/certificate/magang-pkl-2024-sertifikat.webp" alt="Sertifikat Magang PKL"></div><div class="cap">Magang PKL 2024</div></a>
+      <a class="tilt tape" data-zoom href="assets/web/certificate/magang-pkl-2024-daftar-nilai.webp" style="width:min(220px,70vw)"><div class="paper"><img src="assets/web/certificate/magang-pkl-2024-daftar-nilai.webp" alt="Daftar nilai PKL"></div><div class="cap">Magang PKL 2024<small>Daftar nilai</small></div></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h2>Terima <em>kasih!</em></h2>
+    <div class="chips foot-nav" style="justify-content:center"><a href="#top" onclick="scrollTo({top:0})">Kembali ke atas ↑</a></div>
+  </div>
+</footer>
+
+<div id="lb"><img alt=""></div>
+
+<script>
+(function(){
+  var lb=document.getElementById('lb'),im=lb.querySelector('img');
+  function open(src){im.src=src;lb.classList.add('on');document.body.style.overflow='hidden'}
+  lb.addEventListener('click',function(){lb.classList.remove('on');document.body.style.overflow=''});
+  addEventListener('keydown',function(e){if(e.key==='Escape')lb.click()});
+  document.addEventListener('click',function(e){
+    var z=e.target.closest('[data-zoom],[data-zoom-src]');
+    if(!z)return;
+    var src=z.getAttribute('data-zoom-src')||z.getAttribute('data-src')||z.getAttribute('href');
+    if(!src)return;
+    e.preventDefault();open(src);
+  });
+})();
+
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var sel='.sec-head,.tilt,.brief,.ui-title,.feeds-names,.center,footer h2,footer p,.kids-note';
+  var els=[].slice.call(document.querySelectorAll(sel)).filter(function(e){return !e.parentElement.closest('.tilt')&&!e.closest('.brief')||e.classList.contains('brief')});
+  els.forEach(function(el){
+    var sib=[].slice.call(el.parentElement.children).filter(function(c){return c.matches(sel)});
+    var i=Math.max(0,sib.indexOf(el));
+    el.style.setProperty('--d',(i%6*0.09)+'s');
+    el.classList.add('rv');
+    if(el.matches('.tilt,.brief')&&!el.closest('.phones,.harian,.mag,.sit-row,.certs')) el.classList.add(i%2?'from-r':'from-l');
+  });
+  if(!reduce&&'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(el){io.observe(el)});
+  } else els.forEach(function(el){el.classList.add('in')});
+  var bar=document.getElementById('progress'),pr=document.querySelector('.portrait'),bl=document.querySelector('.portrait .blob');
+  function onS(){
+    var h=document.documentElement.scrollHeight-innerHeight;
+    bar.style.transform='scaleX('+(h>0?scrollY/h:0)+')';
+    if(!reduce&&pr&&scrollY<innerHeight*1.2){pr.style.translate='0 '+(scrollY*-0.12)+'px';if(bl)bl.style.translate='0 '+(scrollY*0.08)+'px'}
+  }
+  addEventListener('scroll',onS,{passive:true});onS();
+})();
+
+(function(){
+  var nav=document.getElementById('nav'),t=nav.querySelector('.nav-t');
+  function set(o){nav.classList.toggle('open',o);t.setAttribute('aria-expanded',o)}
+  t.addEventListener('click',function(){set(!nav.classList.contains('open'))});
+  nav.querySelectorAll('.nav-l a').forEach(function(a){a.addEventListener('click',function(){set(false)})});
+  document.addEventListener('click',function(e){if(!nav.contains(e.target))set(false)});
+})();
+</script>
+</body>
+</html>
